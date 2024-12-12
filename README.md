@@ -11,6 +11,11 @@ The transmitter only requires the nRF24L01+PA+LNA transreceiver module and the A
 
 The receiver is connected to the Arduino Uno in the same manner however a speaker is also connected througha breadboard. This speaker is connected simply using a power and ground.
 
+Although unnecessary, I found it helpful to connect the Arduino UNO to a module with an LED light. This is done by connecting 2 100omh resistors in series and creating a circuit with the 5V power output from the Arduino UNO. Likewise, the nRF24L01 module performs inconsistently due to the poor power supply from the 3.3V output of certain Arduinos. If this occurs, a 10uF capacitor can be directly sodered onto the pins of the nRF24L01 module. 
+
+![Breadboard](https://github.com/user-attachments/assets/2f69ac6c-e5bc-4288-b0bc-a116df530b70)
+
+
 ## Changables
 Within the transmitter, there are a few varaibles that can be changed to increase or decrease the messaging cooldown time, the number of messages sent, and the time between each message. The message cooldown is found as a global variable named "cooldown". The number of messages is the first parameter to the START_PROTOCOL function. The second parameter is the LED delay time and therefore the delay between each message as well.
 
