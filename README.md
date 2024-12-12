@@ -13,7 +13,7 @@ The receiver is connected to the Arduino Uno in the same manner however a speake
 
 Although unnecessary, I found it helpful to connect the Arduino UNO to a module with an LED light. This is done by connecting 2 100omh resistors in series and creating a circuit with the 5V power output from the Arduino UNO. Likewise, the nRF24L01 module performs inconsistently due to the poor power supply from the 3.3V output of certain Arduinos. If this occurs, a 10uF capacitor can be directly sodered onto the pins of the nRF24L01 module. 
 
-![Breadboard](https://github.com/user-attachments/assets/2f69ac6c-e5bc-4288-b0bc-a116df530b70)
+![Breadboard | width=300](https://github.com/user-attachments/assets/2f69ac6c-e5bc-4288-b0bc-a116df530b70)
 
 
 ## Changables
